@@ -1,67 +1,29 @@
-import java.util.Scanner;
+# 🎮 Number Guessing Game (Java)
 
-public class GFG {
+A simple console-based number guessing game built using Java. The user tries to guess a randomly generated number within a certain number of attempts. It's a great beginner-level project to practice Java fundamentals such as conditionals, loops, input handling, and random number generation.
 
-	public static void
-	guessingNumberGame()
-	{
+## 🧠 How It Works
 
-		Scanner sc = new Scanner(System.in);
+- The program generates a random number between a defined range (e.g., 1 to 100).
+- The user is prompted to guess the number.
+- The program gives feedback whether the guessed number is too high, too low, or correct.
+- The user has a limited number of attempts to guess the number.
 
-		int number = 1 + (int)(100
-							* Math.random());
+## ✨ Features
 
-		int K = 5;
+- Random number generation
+- Input validation
+- Limited number of attempts
+- User feedback after each guess
+- Option to replay the game
 
-		int i, guess;
+## 🛠️ Technologies Used
 
-		System.out.println(
-			"A number is chosen"
-			+ " between 1 to 100."
-			+ "Guess the number"
-			+ " within 5 trials.");
+- **Language**: Java
+- **IDE**: Works in any Java-compatible IDE (e.g., IntelliJ, Eclipse, VS Code)
 
-		for (i = 0; i < K; i++) {
+## 🚀 How to Run
 
-			System.out.println(
-				"Guess the number:");
-
-			guess = sc.nextInt();
-
-			if (number == guess) {
-				System.out.println(
-					"Congratulations!"
-					+ " You guessed the number.");
-				break;
-			}
-			else if (number > guess
-					&& i != K - 1) {
-				System.out.println(
-					"The number is "
-					+ "greater than " + guess);
-			}
-			else if (number < guess
-					&& i != K - 1) {
-				System.out.println(
-					"The number is"
-					+ " less than " + guess);
-			}
-		}
-
-		if (i == K) {
-			System.out.println(
-				"You have exhausted"
-				+ " K trials.");
-
-			System.out.println(
-				"The number was " + number);
-		}
-	}
-
-	public static void
-	main(String arg[])
-	{
-
-		guessingNumberGame();
-	}
-}
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-userna
